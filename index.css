@@ -43,7 +43,12 @@ h3{
     border: 1px bold black;
     width: 155px;
 }
-.plus-one, .plus-two, .plus-three{
+.plus-one,  
+.plus-two,
+.plus-three,
+.Minus-one,
+.Minus-two,
+.Minus-three{
     font-family: 'Cursed Timer ULiL';
     font-style: normal;
     font-weight: 400;

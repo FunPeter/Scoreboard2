@@ -56,6 +56,15 @@
  function plusThree() {
    boxOnespace.textContent = score += 3
  }
+ function minusOne(){
+     boxOnespace.textContent = score -= 1  
+ }
+  function minusTwo() {
+    boxOnespace.textContent = score -= 2;
+  }
+   function minusThree() {
+     boxOnespace.textContent = score -= 3;
+   }
 
 function onePlus(){
     boxTwoSpace.textContent = score += 1
@@ -65,6 +74,20 @@ function twoPlus() {
 }
 function threePlus() {
   boxTwoSpace.textContent = score += 3
+}
+function oneMinus() {
+  boxTwoSpace.textContent = score -= 1;
+  if (boxTwoSpace.valu < 0) {
+    boxTwoSpace.textContent = zeroScore
+  } else {
+    boxTwoSpace.textContent = score
+  }
+}
+function twoMinus() {
+  boxTwoSpace.textContent = score -= 2;
+}
+function threeMinus() {
+  boxTwoSpace.textContent = score -= 3;
 }
 function reset(){
     boxOnespace.textContent = zeroScore
