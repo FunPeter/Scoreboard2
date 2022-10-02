@@ -49,6 +49,7 @@
  let score = 0
  function plusOne(){
     boxOnespace.textContent = score += 1   
+    
  }
  function plusTwo(){
     boxOnespace.textContent = score += 2
@@ -58,16 +59,36 @@
  }
  function minusOne(){
      boxOnespace.textContent = score -= 1  
+     if (boxOnespace.textContent < 0) {
+        boxOnespace.textContent = score -= score
+     } else {
+      boxOnespace.textContent = score
+     }
  }
   function minusTwo() {
     boxOnespace.textContent = score -= 2;
+    if (boxOnespace.textContent < 0) {
+      boxOnespace.textContent = score -= score
+    } else {
+      boxOnespace.textContent = score
+    }
   }
    function minusThree() {
      boxOnespace.textContent = score -= 3;
+     if (boxOnespace.textContent < 0) {
+       boxOnespace.textContent = score -= score;
+     } else {
+       boxOnespace.textContent = score;
+     }
    }
 
 function onePlus(){
     boxTwoSpace.textContent = score += 1
+    if (boxTwoSpace.textContent > 0) {
+      boxTwoSpace.textContent = score;
+    } else {
+      boxTwoSpace.textContent = zeroScore;
+    }
 }
 function twoPlus() {
   boxTwoSpace.textContent = score += 2
@@ -77,17 +98,27 @@ function threePlus() {
 }
 function oneMinus() {
   boxTwoSpace.textContent = score -= 1;
-  if (boxTwoSpace.valu < 0) {
-    boxTwoSpace.textContent = zeroScore
+  if (boxTwoSpace.textContent < 0) {
+    boxTwoSpace.textContent = score -= score
   } else {
     boxTwoSpace.textContent = score
   }
 }
 function twoMinus() {
   boxTwoSpace.textContent = score -= 2;
+   if (boxTwoSpace.textContent < 0) {
+     boxTwoSpace.textContent = score -= score;
+   } else {
+     boxTwoSpace.textContent = score;
+   }
 }
 function threeMinus() {
   boxTwoSpace.textContent = score -= 3;
+   if (boxTwoSpace.textContent < 0) {
+     boxTwoSpace.textContent = score -= score;
+   } else {
+     boxTwoSpace.textContent = score;
+   }
 }
 function reset(){
     boxOnespace.textContent = zeroScore
